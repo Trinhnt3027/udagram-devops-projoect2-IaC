@@ -3,7 +3,7 @@ This project deploys a web appplication.
 Using cloudformation template to deploy all resources
 
 ## Cloud architecture
-![Cloud archtecture](Cloud Architecture.jpeg)
+![Cloud Achtecture](CloudArchitecture.jpeg)
 
 ## Project structure
 - `/scripts`: contains scripts file to create, update, delete stack
