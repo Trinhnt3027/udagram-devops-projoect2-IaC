@@ -89,7 +89,7 @@ Resources:
                     apt-get install awscli -y
                     apt-get install apache2 -y
                     systemctl start apache2.service
-                    aws s3 cp s3:${S3BucketName}/index.html /var/www/html
+                    aws s3 cp s3://${S3BucketName}/index.html /var/www/html
             ImageId: !Ref AMIServerId
             IamInstanceProfile: !Ref EC2InstanceProfile
             SecurityGroups:
@@ -105,7 +105,7 @@ Resources:
         Type: AWS::AutoScaling::AutoScalingGroup
         Properties:
             VPCZoneIdentifier:
-                - Fn::ImportValue: !Sub "${EnvironmentName}-PUB-NETS"
+                - Fn::ImportValue: !Sub "${EnvironmentName}-PRI-NETS"
             LaunchConfigurationName:
                 Ref: WebAppLaunchConfig
             MinSize: "2"

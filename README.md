@@ -23,3 +23,7 @@ $ scripts/update.sh mynetworks networks.yml networks-params.json
 ```
 $ scripts/create.sh myservers servers.yml servers-params.json
 ```
+
+## Result
+- URL of Load Balancer: http://myser-webap-vri49bbj8ef9-1550980032.us-east-1.elb.amazonaws.com
+![Result](web_app.JPG)
