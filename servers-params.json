@@ -1,0 +1,18 @@
+[
+    {
+        "ParameterKey": "EnvironmentName",
+        "ParameterValue": "UdacityDevOpsProject2"
+    },
+    {
+        "ParameterKey": "AMIServerId",
+        "ParameterValue": "ami-0557a15b87f6559cf"
+    },
+    {
+        "ParameterKey": "InstanceType",
+        "ParameterValue": "t2.micro"
+    },
+    {
+        "ParameterKey": "S3BucketName",
+        "ParameterValue": "udagram-devops-project2-bucket"
+    }
+]
